@@ -24,12 +24,12 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="#home" class="active">home</a></li>
-                <li><a href="#feature">feature</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#reviews">reviews</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a data-scroll="home" href="#home" class="active">home</a></li>
+                <li><a data-scroll="feature" href="#feature">feature</a></li>
+                <li><a data-scroll="about" href="#about">about</a></li>
+                <li><a data-scroll="gallery" href="#gallery">gallery</a></li>
+                <li><a data-scroll="reviews" href="#reviews">reviews</a></li>
+                <li><a data-scroll="contact" href="#contact">contact</a></li>
             </ul>
         </nav>
 
@@ -43,10 +43,123 @@
 
     <!-- home sections starts  -->
 
+    <section class="home" id="home">
+        <div class="video">
+            <video src="Videos/ocean.mp4" loop muted autoplay></video>
+        </div>
 
-    
+        <div class="content">
+            <h1>Explore new Places <br> Adventure awaits. </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est libero culpa magnam maxime sapiente ut harum voluptate autem explicabo accusamus?
+            </p>
+        </div>
+
+        <div class="form-container">
+            <form action="">
+                <h3>Search your destination</h3>
+
+                <span>location</span>
+                <input type="text" placeholder="Place you want to visit">
+
+                <span>guest members</span>
+                <input type="text" placeholder="number of people">
+
+                <span>arrivals</span>
+                <input type="date" >
+
+                <span>leaving</span>
+                <input type="date" >
+
+                
+                <input type="submit" value="search">
+
+            </form>
+        </div>
+    </section>
 
     <!-- home sections ends  -->
+
+
+    <!-- feature section starts -->
+
+    <secion class="feature" id="feature">
+
+
+        <h1 class="heading"><span>f</span>eatured <span>l</span>ocations</h1>
+
+        <div class="card-container">
+
+            <div class="card">
+
+                <span class="discount">-40%</span>
+                <img src="Images/hawaii.jpg" alt="">
+                
+                <div class="content">
+                    <h3 class="title">Hawaii</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="Images/egypt.jpg" alt="">
+                
+                <div class="content">
+                    <h3 class="title">Egypt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <span class="discount">-30%</span>
+                <img src="Images/india.jpg" alt="">
+                
+                <div class="content">
+                    <h3 class="title">India</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </secion>
+
+    <!-- feature section ends -->
+
+
+
+
+
+
 
 
 
