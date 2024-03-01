@@ -353,9 +353,200 @@ header .fa-bars{
     color: #0098a1;
 }
 
+.review{
+    background: url(../Images/review.jpg) ,linear-gradient(#0098a1, #0098a1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
 
+.review .heading{
+    color: #fff;
+    padding-bottom: 4rem;
+}
+.review .heading span{
+    color: gold;
+}
+.review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review .box-container .box{
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow:0 .3rem .5rem #000;
+    background: #fff;
+}
+.review .box-container .box .image{
+    margin-top: -5rem;
+}
+.review .box-container .box .image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid #fff;
+}
 
+.review .box-container .box .content h3{
+        font-size: 2rem;
+        color: #0098a1;
+}
 
+.review .box-container .box .content p{
+        font-size: 1.4rem;
+        color: #333;
+        padding: .5rem 1.5rem;
+}
+.review .box-container .box .content .stars{
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact .row .contact-info .box{
+    margin: 4rem 2rem;
+}
+
+.contact .row .contact-info .box h3{
+    font-size: 2rem;
+    color: #333;
+    
+}
+
+.contact .row .contact-info .box h3 i{
+    color: #0098a1;
+
+}
+.contact .row .contact-info .box p{
+    padding-left: 3rem;
+    font-size: 1.7rem;
+    color: #aaa;
+}
+.contact .row .contact-form-container{
+    width: 50%;
+}
+.contact .row .contact-form-container h3{
+    font-size: 4rem;
+    padding-top: 4rem;
+    color:#0098a1;
+}
+.contact .row .contact-form-container form input,textarea{
+    outline: none;
+    border: .2rem solid #0098a1;
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    width: 49%;
+}
+.contact .row .contact-form-container form textarea{
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    height: 20%;
+
+}
+.contact .row .contact-form-container form input[type="submit"]{
+    color:#0098a1;
+    border: .2rem solid #0098a1;
+    cursor: pointer;
+    transition: .2s;
+    width: 20rem;
+}
+.contact .row .contact-form-container form input[type="submit"]:hover{
+    color:#fff;
+    background: #0098a1;
+}
+.newsletter{
+    padding: 2rem;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../Images/back-beach.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+.newsletter h1{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+}
+
+.newsletter p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 15rem;
+}
+.newsletter form input{
+    outline: none;
+    border: none;
+    height: 5rem;
+}
+.newsletter form input[type="email"]{
+    width: 40rem;
+    padding: 0 1rem;
+    color: #fff;
+    background: rgba(255,255,255 ,.2);
+    font-size: 2rem;
+}
+.newsletter form input[type="email"]::placeholder{
+    color: #ccc;
+}
+.newsletter form input[type="submit"]{
+    width: 20rem;
+    color: #fff;
+    background: #0098a1;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: -1.2rem;
+    transition:.2s;
+}
+.newsletter form input[type="submit"]:hover{
+    border: .2rem solid #fff;
+    color: #fff;
+    background: none;
+}
+.footer{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding:2rem;
+    background: #222;
+}
+.footer .credit{
+    font-size:2rem;
+    color: #eee;
+}
+
+.footer .credit span{
+    color:#0098a1;
+}
+.footer .icons a{
+    font-size: 2rem;
+    margin: 0 .5rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius:50%;
+    color: #fff;
+    border: .2rem solid #fff;
+    transition:.2s linear;
+}
+.footer .icons a:hover{
+    background: #0098a1;
+}
 
 
 
@@ -441,6 +632,33 @@ header .fa-bars{
     .about .row .content .btn{
         margin-right: 0;
     }
+    .content .row{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .content .row .contact-form-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* .newsletter input[type="email"]{
+       width: 100%;
+       margin-bottom: 0 auto;
+    } */
+    .newsletter p{
+        padding:1rem 0;
+    }
+    .newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 0 auto;
+    }
+    .footer{
+        flex-flow: column;
+    }
+    .footer .credit{
+        text-align: center;
+        padding-bottom: 3rem;
+    }
 }
 
 
@@ -458,6 +676,11 @@ header .fa-bars{
     .home .form-container form input[type="submit"]{
         width: 100%;
     }
+    .content .row .contact-form-container form input{
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .content .row .contact-form-container form input[type="submit"]{
+        width:100%;
+    }
 }
-
-
